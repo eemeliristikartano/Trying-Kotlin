@@ -15,13 +15,13 @@ class TestingApplication{
 	@Bean
 	fun initializeDB(customerRepo: CustomerRepository, colorRepo: ColorRepository) =  CommandLineRunner {
 
+		// Save colors.
 		val testColorBlue = colorRepo.save(Color(color = "Blue"))
 		val testColorGreen = colorRepo.save(Color(color = "Green"))
 
-		val testCustomerJohn = Customer(firstName = "John", lastName = "Johnson", favoriteColor = testColorBlue)
-		val testCustomerAda = Customer(firstName = "Ada", lastName = "Johnson", favoriteColor = testColorGreen)
-		customerRepo.save(testCustomerJohn)
-		customerRepo.save(testCustomerAda)
+		// Save customers.
+		val testCustomerJohn = customerRepo.save(Customer(firstName = "John", lastName = "Johnson", favoriteColor = testColorBlue))
+		val testCustomerAda = customerRepo.save(Customer(firstName = "Ada", lastName = "Johnson", favoriteColor = testColorGreen))
 
 
 
