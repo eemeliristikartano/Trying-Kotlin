@@ -1,4 +1,4 @@
-package com.testing.testing.repositorys
+package com.testing.testing.repositories
 
 import com.testing.testing.entities.Customer
 import org.springframework.data.repository.CrudRepository

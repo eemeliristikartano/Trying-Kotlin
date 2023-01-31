@@ -1,7 +1,7 @@
 package com.testing.testing.controllers
 
 import com.testing.testing.entities.Customer
-import com.testing.testing.repositorys.CustomerRepository
+import com.testing.testing.repositories.CustomerRepository
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 

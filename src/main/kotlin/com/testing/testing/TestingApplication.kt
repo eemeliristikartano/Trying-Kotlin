@@ -2,8 +2,8 @@ package com.testing.testing
 
 import com.testing.testing.entities.Color
 import com.testing.testing.entities.Customer
-import com.testing.testing.repositorys.ColorRepository
-import com.testing.testing.repositorys.CustomerRepository
+import com.testing.testing.repositories.ColorRepository
+import com.testing.testing.repositories.CustomerRepository
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
