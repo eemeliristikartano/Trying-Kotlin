@@ -1,9 +1,9 @@
 package com.testing.testing
 
-import com.testing.testing.entitys.Color
-import com.testing.testing.entitys.Customer
+import com.testing.testing.entities.Color
+import com.testing.testing.entities.Customer
 import com.testing.testing.repositorys.ColorRepository
-import com.testing.testing.repositorys.CustomerRepostitory
+import com.testing.testing.repositorys.CustomerRepository
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Bean
 class TestingApplication{
 
 	@Bean
-	fun initializeDB(customerRepo: CustomerRepostitory, colorRepo: ColorRepository) =  CommandLineRunner {
+	fun initializeDB(customerRepo: CustomerRepository, colorRepo: ColorRepository) =  CommandLineRunner {
 
 		val testColorBlue = colorRepo.save(Color(color = "Blue"))
 		val testColorGreen = colorRepo.save(Color(color = "Green"))

@@ -1,4 +1,4 @@
-package com.testing.testing.entitys
+package com.testing.testing.entities
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import jakarta.persistence.Entity

@@ -1,14 +1,13 @@
 package com.testing.testing.controllers
 
-import com.testing.testing.entitys.Customer
-import com.testing.testing.repositorys.CustomerRepostitory
+import com.testing.testing.entities.Customer
+import com.testing.testing.repositorys.CustomerRepository
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
-import javax.swing.text.html.HTML
 
 @RestController
 class CustomerController(
-    var customerRepo : CustomerRepostitory
+    var customerRepo : CustomerRepository
     )
 {
     @GetMapping(value = ["/"])
